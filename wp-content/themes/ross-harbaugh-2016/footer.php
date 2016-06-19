@@ -10,15 +10,40 @@
  */
 
 ?>
-
+      </div><!-- .wrapper -->
+    </div><!-- .page-content -->
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'wp-boilerplate' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'wp-boilerplate' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'wp-boilerplate' ), 'wp-boilerplate', '<a href="http://underscores.me/" rel="designer">Underscores.me</a>' ); ?>
-		</div><!-- .site-info -->
+	  <div class="wrapper">
+
+	    <h2 class="footer-heading">{{ site.title }}</h2>
+
+	    <div class="footer-col-wrapper">
+	      <div class="footer-col  footer-col-1">
+	        <ul class="contact-list">
+	          <li>Professor of Cello</li>
+	          <li>Chair, Instrumental Performance Dept</li>
+	          <li>Frost School of Music</li>
+	          <li>PO Box 248165</li>
+	          <li>University of Miami</li>
+	          <li>Coral Gables, FL 33124</li>
+	        </ul>
+	      </div>
+
+	      <div class="footer-col  footer-col-2">
+	      </div>
+
+	      <div class="footer-col  footer-col-3">
+	        <ul class="contact-list"
+	          <li>{{ site.phone }}</li>
+	          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+	        </ul>
+	        <p class="text">{{ site.description }}</p>
+	      </div>
+	    </div>
+
+	  </div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 

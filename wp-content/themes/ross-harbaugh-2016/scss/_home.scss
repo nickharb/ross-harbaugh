@@ -1,1 +1,78 @@
-// home
+// Home
+
+body {
+  // overflow: hidden;
+}
+
+.site-header {
+  background: transparent;
+  min-height: inherit;
+  border: none;
+  padding: 10px 20px;
+}
+
+.home .main-navigation {
+  position: absolute;
+  top: 20px;
+  left: 90px;
+  font-size: 24px;
+}
+
+.main-navigation li {
+	margin-right: 10px;
+}
+
+.site-title {
+  display: none;
+}
+
+// Home page styles
+
+.home {
+  /*transition: background 2s ease;*/
+  background: url(images/bg-home-1.jpg) no-repeat top center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  /*background: #fff;*/
+  height: 100%;
+}
+
+.home-intro {
+  /*max-width: 55%;*/
+  /*margin-top: 60px;*/
+  // position: absolute;
+  // top: 120px;
+  // left: 80px;
+}
+
+.intro-bullets {
+  margin-top: 60px;
+  padding-left: 8px;
+  /*display: none;*/
+}
+
+.home-intro h1 {
+  /*font-size: 120px;
+  font-weight: 200;
+  line-height: 0.95em;
+  color: #0B1607;*/
+
+  font-size: 120px;
+  font-weight: 900;
+  line-height: 0.95em;
+  /*color: rgba(255,255,255,0.5);*/
+  color: #0B1607;
+  text-transform: uppercase;
+}
+
+.home-intro h1 span {
+  /*font-size: 140px;*/
+  display: block;
+}
+
+.home-intro h3 {
+  font-size: 16px;
+  font-weight: 400;
+}
