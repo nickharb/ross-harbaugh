@@ -681,14 +681,47 @@ object {
 # Header
 --------------------------------------------------------------*/
 .site-header {
-  background: royalblue;
-  padding: 20px; }
+  background: #fff;
+  padding: 20px;
+  border-top: 3px solid #333;
+  border-bottom: 1px solid #eee; }
+
+.site-title {
+  display: block;
+  float: left;
+  margin: 0;
+  font-size: 24px; }
+
+.site-title a,
+.site-title a:visited {
+  color: #111; }
 
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 .site-footer {
   border-top: 1px solid #eee; }
+
+.footer-heading {
+  font-size: 18px; }
+
+.footer-col-wrapper {
+  font-size: 14px;
+  color: #828282; }
+
+.contact-list {
+  margin: 0;
+  padding: 0; }
+
+.contact-list li {
+  list-style: none; }
+
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+.site-content {
+  padding-top: 20px;
+  padding-bottom: 20px; }
 
 /*--------------------------------------------------------------
 # Navigation
@@ -718,10 +751,9 @@ a:active {
 ## Menus
 --------------------------------------------------------------*/
 .main-navigation {
-  clear: both;
   display: block;
-  float: left;
-  width: 100%; }
+  float: right;
+  margin-top: 7px; }
 
 .main-navigation ul {
   display: none;
@@ -731,11 +763,20 @@ a:active {
 
 .main-navigation li {
   float: left;
-  position: relative; }
+  position: relative;
+  margin-right: 10px; }
+
+.main-navigation li:last-of-type {
+  margin: 0; }
 
 .main-navigation a {
   display: block;
-  text-decoration: none; }
+  text-decoration: none;
+  color: #333; }
+
+.main-navigation a:hover {
+  color: #333;
+  text-decoration: underline; }
 
 .main-navigation ul ul {
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
@@ -790,37 +831,18 @@ a:active {
   text-align: right;
   width: 50%; }
 
-.contact-list {
-  margin: 0;
-  padding: 0; }
-
-.contact-list li {
-  list-style: none; }
-
 .home {
-  /*transition: background 2s ease;*/
   background: url(images/bg-home-1.jpg) no-repeat top center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
-  /*background: #fff;*/
-  height: 100%; }
-
-.home-intro {
-  /*max-width: 55%;*/
-  /*margin-top: 60px;*/ }
+  background-size: cover; }
 
 .intro-bullets {
   margin-top: 60px;
-  padding-left: 8px;
-  /*display: none;*/ }
+  padding-left: 8px; }
 
 .home-intro h1 {
-  /*font-size: 120px;
-  font-weight: 200;
-  line-height: 0.95em;
-  color: #0B1607;*/
   font-size: 120px;
   font-weight: 900;
   line-height: 0.95em;

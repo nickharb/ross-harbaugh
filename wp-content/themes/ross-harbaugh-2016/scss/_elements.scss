@@ -3,8 +3,22 @@
 --------------------------------------------------------------*/
 
 .site-header {
-    background: royalblue;
+    background: #fff;
     padding: 20px;
+    border-top: 3px solid #333;
+    border-bottom: 1px solid #eee;
+}
+
+.site-title {
+    display: block;
+    float: left;
+    margin: 0;
+    font-size: 24px;
+}
+
+.site-title a,
+.site-title a:visited {
+    color: #111;
 }
 
 /*--------------------------------------------------------------
@@ -13,6 +27,33 @@
 
 .site-footer {
     border-top: 1px solid #eee;
+}
+
+.footer-heading {
+    font-size: 18px;
+}
+
+.footer-col-wrapper {
+    font-size: 14px;
+    color: #828282;
+}
+
+.contact-list {
+    margin: 0;
+    padding: 0;
+}
+
+.contact-list li {
+    list-style: none;
+}
+
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+
+.site-content {
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 /*--------------------------------------------------------------
@@ -48,10 +89,9 @@ a:active {
 ## Menus
 --------------------------------------------------------------*/
 .main-navigation {
-    clear: both;
     display: block;
-    float: left;
-    width: 100%;
+    float: right;
+    margin-top: 7px;
 }
 
 .main-navigation ul {
@@ -64,11 +104,22 @@ a:active {
 .main-navigation li {
     float: left;
     position: relative;
+    margin-right: 10px;
+}
+
+.main-navigation li:last-of-type {
+    margin: 0;
 }
 
 .main-navigation a {
     display: block;
     text-decoration: none;
+    color: #333;
+}
+
+.main-navigation a:hover {
+    color: #333;
+    text-decoration: underline;
 }
 
 .main-navigation ul ul {

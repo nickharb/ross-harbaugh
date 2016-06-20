@@ -1,69 +1,19 @@
-// .site-header {
-//   background: transparent;
-//   min-height: inherit;
-//   border: none;
-//   padding: 10px 20px;
-// }
-
-// .home .main-navigation {
-//   position: absolute;
-//   top: 20px;
-//   left: 90px;
-//   font-size: 24px;
-// }
-
-// .main-navigation li {
-// 	margin-right: 10px;
-// }
-
-// .site-title {
-//   display: none;
-// }
-
-
-
-.contact-list {
-	margin: 0;
-	padding: 0;
-}
-
-.contact-list li {
-	list-style: none;
-}
-
 // Home
 
 .home {
-  /*transition: background 2s ease;*/
   background: url(images/bg-home-1.jpg) no-repeat top center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  /*background: #fff;*/
-  height: 100%;
-}
-
-.home-intro {
-  /*max-width: 55%;*/
-  /*margin-top: 60px;*/
-  // position: absolute;
-  // top: 120px;
-  // left: 80px;
 }
 
 .intro-bullets {
   margin-top: 60px;
   padding-left: 8px;
-  /*display: none;*/
 }
 
 .home-intro h1 {
-  /*font-size: 120px;
-  font-weight: 200;
-  line-height: 0.95em;
-  color: #0B1607;*/
-
   font-size: 120px;
   font-weight: 900;
   line-height: 0.95em;
@@ -82,7 +32,7 @@
   font-weight: 400;
 }
 
-// Pages
+// Posts & pages
 
 .post-title {
   margin-bottom: 30px;
