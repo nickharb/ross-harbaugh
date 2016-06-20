@@ -10,41 +10,36 @@
  */
 
 ?>
-      </div><!-- .wrapper -->
-    </div><!-- .page-content -->
-	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer" role="contentinfo">
-	  <div class="wrapper">
+    </div><!-- #content -->
 
-	    <h2 class="footer-heading">{{ site.title }}</h2>
+    <footer class="site-footer">
+        <div class="container">
+            <h2 class="footer-heading">Ross Harbaugh</h2>
 
-	    <div class="footer-col-wrapper">
-	      <div class="footer-col  footer-col-1">
-	        <ul class="contact-list">
-	          <li>Professor of Cello</li>
-	          <li>Chair, Instrumental Performance Dept</li>
-	          <li>Frost School of Music</li>
-	          <li>PO Box 248165</li>
-	          <li>University of Miami</li>
-	          <li>Coral Gables, FL 33124</li>
-	        </ul>
-	      </div>
+            <div class="row footer-col-wrapper">
+                <div class="col-md-4">
+                    <ul class="contact-list">
+                        <li>Professor of Cello</li>
+                        <li>Chair, Instrumental Performance Dept</li>
+                        <li>Frost School of Music</li>
+                        <li>PO Box 248165</li>
+                        <li>University of Miami</li>
+                        <li>Coral Gables, FL 33124</li>
+                    </ul>
+                </div>
 
-	      <div class="footer-col  footer-col-2">
-	      </div>
+                <div class="col-md-4">
+                    <ul class="contact-list">
+                        <li>(305) 284-6846</li>
+                        <li><a href="mailto:{{ site.email }}">r.harbaugh@miami.edu</a></li>
+                    </ul>
+                    <p>Ross Harbaugh is Professor of Cello and Chairman of the Instrumental Performance Department at the University of Miami's Frost School of Music, and cellist of the Bergonzi String Quartet.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-	      <div class="footer-col  footer-col-3">
-	        <ul class="contact-list"
-	          <li>{{ site.phone }}</li>
-	          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-	        </ul>
-	        <p class="text">{{ site.description }}</p>
-	      </div>
-	    </div>
-
-	  </div>
-	</footer><!-- #colophon -->
 </div><!-- #page -->
 
 <?php wp_footer(); ?>

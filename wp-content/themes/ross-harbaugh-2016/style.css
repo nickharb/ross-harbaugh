@@ -1,148 +1,10 @@
-/*
-Theme Name: Ross Harbaugh 2016
-Theme URI: http://wordpress.org/themes/twentythirteen
-Author: Nick Harbaugh
-Author URI: http://nickharbaugh.com/
-Description: The 2013 theme for WordPress takes us back to the blog, featuring a full range of post formats, each displayed beautifully in their own unique way. Design details abound, starting with a vibrant color scheme and matching header images, beautiful typography and icons, and a flexible layout that looks great on any device, big or small.
-Version: 1.0
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: black, brown, orange, tan, white, yellow, light, one-column, two-columns, right-sidebar, flexible-width, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, translation-ready
-Text Domain: twentythirteen
-
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
-*/
-/**
- * Reset some basic elements
- */
-body, h1, h2, h3, h4, h5, h6,
-p, blockquote, pre, hr,
-dl, dd, ol, ul, figure {
-  margin: 0;
-  padding: 0; }
-
-/**
- * Basic styling
- */
-html {
-  height: 100%; }
-
-body {
-  font-family: "Lato", Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 300;
-  color: #111111;
-  -webkit-text-size-adjust: 100%;
-  height: 100%; }
-
-/**
- * Set `margin-bottom` to maintain vertical rhythm
- */
-h1, h2, h3, h4, h5, h6,
-p, blockquote, pre,
-ul, ol, dl, figure {
-  margin-bottom: 15px; }
-
-/**
- * Images
- */
-img {
-  max-width: 100%;
-  vertical-align: middle; }
-
-/**
- * Figures
- */
-figure > img {
-  display: block; }
-
-figcaption {
-  font-size: 14px; }
-
-/**
- * Lists
- */
-ul, ol {
-  margin-left: 30px; }
-
-li > ul,
-li > ol {
-  margin-bottom: 0; }
-
-/**
- * Headings
- */
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 300; }
-
-/**
- * Links
- */
-a {
-  color: #2a7ae2;
-  text-decoration: none; }
-  a:visited {
-    color: #1756a9; }
-  a:hover {
-    color: #111111;
-    text-decoration: underline; }
-
-/**
- * Blockquotes
- */
-blockquote {
-  color: #828282;
-  border-left: 4px solid #e8e8e8;
-  padding-left: 15px;
-  font-size: 18px;
-  letter-spacing: -1px;
-  font-style: italic; }
-  blockquote > :last-child {
-    margin-bottom: 0; }
-
-/**
- * Wrapper
- */
-.wrapper {
-  max-width: -webkit-calc(1000px - (30px * 2));
-  max-width: calc(1000px - (30px * 2));
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: 30px;
-  padding-left: 30px; }
-  @media screen and (max-width: 800px) {
-    .wrapper {
-      max-width: -webkit-calc(1000px - (30px));
-      max-width: calc(1000px - (30px));
-      padding-right: 15px;
-      padding-left: 15px; } }
-
-/**
- * Clearfix
- */
-.wrapper:after, .footer-col-wrapper:after {
-  content: "";
-  display: table;
-  clear: both; }
-
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  text-rendering: optimizeLegibility;
-  -webkit-font-feature-settings: "kern", "liga";
-  -moz-font-feature-settings: "kern", "liga";
-  font-feature-settings: "kern", "liga";
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  hyphens: auto; }
+  -ms-text-size-adjust: 100%; }
 
 body {
   margin: 0; }
@@ -311,6 +173,21 @@ td,
 th {
   padding: 0; }
 
+/*
+Theme Name: Ross Harbaugh 2016
+Theme URI: http://wordpress.org/themes/twentythirteen
+Author: Nick Harbaugh
+Author URI: http://nickharbaugh.com/
+Description: The 2013 theme for WordPress takes us back to the blog, featuring a full range of post formats, each displayed beautifully in their own unique way. Design details abound, starting with a vibrant color scheme and matching header images, beautiful typography and icons, and a flexible layout that looks great on any device, big or small.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, brown, orange, tan, white, yellow, light, one-column, two-columns, right-sidebar, flexible-width, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, translation-ready
+Text Domain: twentythirteen
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -384,7 +261,19 @@ big {
 # Elements
 --------------------------------------------------------------*/
 html {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  -webkit-font-feature-settings: "kern", "liga";
+  -moz-font-feature-settings: "kern", "liga";
+  font-feature-settings: "kern", "liga";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto; }
 
 *,
 *:before,
@@ -393,8 +282,13 @@ html {
   box-sizing: inherit; }
 
 body {
-  background: #fff;
-  /* Fallback for when there is no custom background color defined. */ }
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #111111;
+  background-color: #fdfdfd;
+  -webkit-text-size-adjust: 100%;
+  background: #fff; }
 
 blockquote:before,
 blockquote:after,
@@ -541,106 +435,6 @@ input[type="color"] {
 textarea {
   padding-left: 3px;
   width: 100%; }
-
-/*--------------------------------------------------------------
-# Navigation
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-## Links
---------------------------------------------------------------*/
-a {
-  color: royalblue; }
-
-a:visited {
-  color: purple; }
-
-a:hover,
-a:focus,
-a:active {
-  color: midnightblue; }
-
-a:focus {
-  outline: thin dotted; }
-
-a:hover,
-a:active {
-  outline: 0; }
-
-/*--------------------------------------------------------------
-## Menus
---------------------------------------------------------------*/
-.main-navigation {
-  clear: both;
-  display: block;
-  float: left;
-  width: 100%; }
-
-.main-navigation ul {
-  display: none;
-  list-style: none;
-  margin: 0;
-  padding-left: 0; }
-
-.main-navigation li {
-  float: left;
-  position: relative; }
-
-.main-navigation a {
-  display: block;
-  text-decoration: none; }
-
-.main-navigation ul ul {
-  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-  float: left;
-  position: absolute;
-  top: 1.5em;
-  left: -999em;
-  z-index: 99999; }
-
-.main-navigation ul ul ul {
-  left: -999em;
-  top: 0; }
-
-.main-navigation ul ul a {
-  width: 200px; }
-
-.main-navigation ul li:hover > ul,
-.main-navigation ul li.focus > ul {
-  left: auto; }
-
-.main-navigation ul ul li:hover > ul,
-.main-navigation ul ul li.focus > ul {
-  left: 100%; }
-
-/* Small menu. */
-.menu-toggle,
-.main-navigation.toggled ul {
-  display: block; }
-
-@media screen and (min-width: 37.5em) {
-  .menu-toggle {
-    display: none; }
-
-  .main-navigation ul {
-    display: block; } }
-.site-main .comment-navigation,
-.site-main .posts-navigation,
-.site-main .post-navigation {
-  margin: 0 0 1.5em;
-  overflow: hidden; }
-
-.comment-navigation .nav-previous,
-.posts-navigation .nav-previous,
-.post-navigation .nav-previous {
-  float: left;
-  width: 50%; }
-
-.comment-navigation .nav-next,
-.posts-navigation .nav-next,
-.post-navigation .nav-next {
-  float: right;
-  text-align: right;
-  width: 50%; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -802,6 +596,24 @@ a:active {
   margin-top: 0;
   padding: 0; }
 
+.page-content img {
+  margin-bottom: 20px; }
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+  margin-bottom: 20px; }
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
 /* Make sure embeds and iframes fit their containers. */
 embed,
 iframe,
@@ -865,233 +677,125 @@ object {
 .gallery-caption {
   display: block; }
 
-/**
- * Site header
- */
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
 .site-header {
-  border-top: 5px solid #424242;
-  border-bottom: 1px solid #e8e8e8;
-  min-height: 56px;
-  background: #fdfdfd;
-  position: relative; }
+  background: royalblue;
+  padding: 20px; }
 
-.site-title {
-  font-size: 26px;
-  line-height: 56px;
-  letter-spacing: 0px;
-  margin-bottom: 0;
-  float: left;
-  font-weight: 400; }
-  .site-title, .site-title:visited {
-    color: #424242; }
-
-.site-nav {
-  float: right;
-  line-height: 56px; }
-  .site-nav .menu-icon {
-    display: none; }
-  .site-nav .page-link {
-    color: #111111;
-    line-height: 1.5; }
-    .site-nav .page-link:not(:first-child) {
-      margin-left: 20px; }
-  @media screen and (max-width: 600px) {
-    .site-nav {
-      position: absolute;
-      top: 9px;
-      right: 30px;
-      background-color: #fdfdfd;
-      border: 1px solid #e8e8e8;
-      border-radius: 5px;
-      text-align: right; }
-      .site-nav .menu-icon {
-        display: block;
-        float: right;
-        width: 36px;
-        height: 26px;
-        line-height: 0;
-        padding-top: 10px;
-        text-align: center; }
-        .site-nav .menu-icon > svg {
-          width: 18px;
-          height: 15px; }
-          .site-nav .menu-icon > svg path {
-            fill: #424242; }
-      .site-nav .trigger {
-        clear: both;
-        display: none; }
-      .site-nav:hover .trigger {
-        display: block;
-        padding-bottom: 5px; }
-      .site-nav .page-link {
-        display: block;
-        padding: 5px 10px; } }
-
-/**
- * Site footer
- */
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
 .site-footer {
-  border-top: 1px solid #e8e8e8;
-  padding: 30px 0; }
+  border-top: 1px solid #eee; }
 
-.footer-heading {
-  font-size: 18px;
-  margin-bottom: 15px; }
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Links
+--------------------------------------------------------------*/
+a {
+  color: royalblue; }
 
-.contact-list,
-.social-media-list {
-  list-style: none;
-  margin-left: 0; }
+a:visited {
+  color: purple; }
 
-.footer-col-wrapper {
-  font-size: 15px;
-  color: #828282;
-  margin-left: -15px; }
+a:hover,
+a:focus,
+a:active {
+  color: midnightblue; }
 
-.footer-col {
-  float: left;
-  margin-bottom: 15px;
-  padding-left: 15px; }
+a:focus {
+  outline: none; }
 
-.footer-col-1 {
-  width: -webkit-calc(35% - (30px / 2));
-  width: calc(35% - (30px / 2)); }
+a:hover,
+a:active {
+  outline: 0; }
 
-.footer-col-2 {
-  width: -webkit-calc(20% - (30px / 2));
-  width: calc(20% - (30px / 2)); }
-
-.footer-col-3 {
-  width: -webkit-calc(45% - (30px / 2));
-  width: calc(45% - (30px / 2)); }
-
-@media screen and (max-width: 800px) {
-  .footer-col-1,
-  .footer-col-2 {
-    width: -webkit-calc(50% - (30px / 2));
-    width: calc(50% - (30px / 2)); }
-
-  .footer-col-3 {
-    width: -webkit-calc(100% - (30px / 2));
-    width: calc(100% - (30px / 2)); } }
-@media screen and (max-width: 600px) {
-  .footer-col {
-    float: none;
-    width: -webkit-calc(100% - (30px / 2));
-    width: calc(100% - (30px / 2)); } }
-/**
- * Page content
- */
-.page-content {
-  padding: 30px 0; }
-
-.page-heading {
-  font-size: 20px; }
-
-.post-list {
-  margin-left: 0;
-  list-style: none; }
-  .post-list > li {
-    margin-bottom: 30px; }
-
-.post-meta {
-  font-size: 14px;
-  color: #828282; }
-
-.post-link {
+/*--------------------------------------------------------------
+## Menus
+--------------------------------------------------------------*/
+.main-navigation {
+  clear: both;
   display: block;
-  font-size: 24px; }
-
-/**
- * Posts
- */
-.post-header {
-  margin-bottom: 30px; }
-
-.post-title {
-  font-size: 42px;
-  letter-spacing: -1px;
-  line-height: 1; }
-  @media screen and (max-width: 800px) {
-    .post-title {
-      font-size: 36px; } }
-
-.post-content {
-  margin-bottom: 30px; }
-  .post-content h2 {
-    font-size: 32px; }
-    @media screen and (max-width: 800px) {
-      .post-content h2 {
-        font-size: 28px; } }
-  .post-content h3 {
-    font-size: 26px; }
-    @media screen and (max-width: 800px) {
-      .post-content h3 {
-        font-size: 22px; } }
-  .post-content h4 {
-    font-size: 20px; }
-    @media screen and (max-width: 800px) {
-      .post-content h4 {
-        font-size: 18px; } }
-
-h1.post-title {
-  margin-bottom: 30px;
-  font-size: 48px; }
-
-.about .media {
-  max-width: 50%;
   float: left;
-  margin-right: 30px;
-  margin-bottom: 20px; }
+  width: 100%; }
 
-.about .media img {
-  margin-bottom: 20px; }
-
-.video-wrapper {
-  position: relative;
-  padding-bottom: 56.25%;
-  /* 16:9 */
-  padding-top: 25px;
-  height: 0;
-  margin-bottom: 20px; }
-
-.video-wrapper iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%; }
-
-.layout-full {
-  margin-bottom: 70px; }
-
-.layout-half-left,
-.layout-half-right {
-  width: 49%; }
-
-.layout-half-left {
-  float: left; }
-
-.layout-half-right {
-  float: right; }
-
-.site-header {
-  background: transparent;
-  min-height: inherit;
-  border: none;
-  padding: 10px 20px; }
-
-.home .main-navigation {
-  position: absolute;
-  top: 20px;
-  left: 90px;
-  font-size: 24px; }
+.main-navigation ul {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding-left: 0; }
 
 .main-navigation li {
-  margin-right: 10px; }
+  float: left;
+  position: relative; }
 
-.site-title {
-  display: none; }
+.main-navigation a {
+  display: block;
+  text-decoration: none; }
+
+.main-navigation ul ul {
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+  float: left;
+  position: absolute;
+  top: 1.5em;
+  left: -999em;
+  z-index: 99999; }
+
+.main-navigation ul ul ul {
+  left: -999em;
+  top: 0; }
+
+.main-navigation ul ul a {
+  width: 200px; }
+
+.main-navigation ul li:hover > ul,
+.main-navigation ul li.focus > ul {
+  left: auto; }
+
+.main-navigation ul ul li:hover > ul,
+.main-navigation ul ul li.focus > ul {
+  left: 100%; }
+
+/* Small menu. */
+.menu-toggle,
+.main-navigation.toggled ul {
+  display: block; }
+
+@media screen and (min-width: 37.5em) {
+  .menu-toggle {
+    display: none; }
+
+  .main-navigation ul {
+    display: block; } }
+.site-main .comment-navigation,
+.site-main .posts-navigation,
+.site-main .post-navigation {
+  margin: 0 0 1.5em;
+  overflow: hidden; }
+
+.comment-navigation .nav-previous,
+.posts-navigation .nav-previous,
+.post-navigation .nav-previous {
+  float: left;
+  width: 50%; }
+
+.comment-navigation .nav-next,
+.posts-navigation .nav-next,
+.post-navigation .nav-next {
+  float: right;
+  text-align: right;
+  width: 50%; }
+
+.contact-list {
+  margin: 0;
+  padding: 0; }
+
+.contact-list li {
+  list-style: none; }
 
 .home {
   /*transition: background 2s ease;*/
@@ -1131,5 +835,9 @@ h1.post-title {
 .home-intro h3 {
   font-size: 16px;
   font-weight: 400; }
+
+.post-title {
+  margin-bottom: 30px;
+  font-size: 48px; }
 
 /*# sourceMappingURL=style.css.map */
